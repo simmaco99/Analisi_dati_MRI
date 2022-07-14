@@ -1,0 +1,63 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=2.694in,
+at={(0.758in,1.353in)},
+scale only axis,
+xmin=1,
+xmax=12,
+xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+xticklabels={{Variance},{Size},{Volume},{Contrast},{AutoCorrelation},{Complexity},{HGRE},{SRHGE},{LRHGE},{HGZE},{SZHGE},{LZHGE}},
+xticklabel style={rotate=90},
+xlabel style={font=\color{white!15!black}},
+xlabel={variable},
+ymin=0,
+ymax=120000,
+ylabel style={font=\color{white!15!black}},
+ylabel={value},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=red, mark=o, mark options={solid, red}]
+  table[row sep=crcr]{%
+1	52.8995176201589\\
+2	88.7180693808256\\
+3	107112.239268791\\
+4	170.162764200907\\
+5	1746.26403894149\\
+6	14525.8037043038\\
+7	1820.35059459829\\
+8	1761.12679474852\\
+9	2090.85934758841\\
+10	1854.51598423568\\
+11	1388.21634155997\\
+12	61065.5231816083\\
+};
+\addlegendentry{group 1}
+
+\addplot [color=black, mark=x, mark options={solid, black}]
+  table[row sep=crcr]{%
+1	114.635925354191\\
+2	50.6333994340396\\
+3	24416.0909897452\\
+4	397.937966344582\\
+5	3446.64554254814\\
+6	39916.2890144347\\
+7	3624.76892179981\\
+8	3555.35528515629\\
+9	3921.25397727358\\
+10	3642.5937196418\\
+11	2963.14948837306\\
+12	12791.0900845506\\
+};
+\addlegendentry{group 2}
+
+\end{axis}
+\end{tikzpicture}%
