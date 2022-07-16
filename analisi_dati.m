@@ -2,7 +2,7 @@ clc
 close 
 
 it=50;
-
+num=2;
 for select= 1:4
   
 diff_feature(select,it) % plotta le differenze
